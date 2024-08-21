@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+}
+
+button {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapper .container {
+    background: rgb(21,29,37);
+    background: linear-gradient(0deg, rgba(21,29,37,1) 16%, rgba(29,38,47,1) 89%);
+    padding: 30px;
+    border-radius: 30px;
+    width: 28%;
+}
+
+.rating-state, .ty-state {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-state .icon {
+    background-color: hsl(213, 19%, 18%);
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding: 40px 0 20px 0;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-weight: normal;
+}
+
+.rating-state .rate {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0 35px 0;
+}
+
+.rating-state .rate .btn {
+    border: 0;
+    background-color: hsl(213, 19%, 18%);
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating-state .rate .btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+}
+
+.submit {
+    border: 0;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+    padding: 15px 0 15px 0;
+    color: hsl(216, 12%, 8%);
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.ty-state {
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+.you-selected {
+    margin-top: 40px;
+    padding: 7px 20px 7px 20px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50px;
+    color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 480px){
+    .wrapper .container {
+        width: 90%;
+    }
+}
